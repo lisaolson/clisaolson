@@ -1,0 +1,141 @@
+/* Header  */
+
+.opener-section {
+    height: 32rem;
+    display: flex;
+}
+
+.opener {
+    position: absolute;
+}
+
+.opener-paragraph {
+    font-family: 'Poiret One';
+    position: absolute;
+    width: 30rem;
+    right: 5rem;
+    top: 10rem;
+}
+
+.blueyellow {
+    width: 40%;
+    border: 2px solid #595959;
+    padding: 2%;
+    margin: 10%;
+}
+
+.name {
+    transform: rotate(270deg);
+    font-family: 'Thasadith', sans-serif;
+    letter-spacing: 27px;
+    color: #595959;
+    text-transform: uppercase;
+    font-size: 2.5rem; 
+    margin: 6.25rem 0;
+}
+
+.engcre {
+    letter-spacing: .5em;
+    position: absolute;
+    top: 10.6rem;
+    right: 5.8em;
+}
+
+.cre {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+    color: #FF01FB;
+    text-shadow: 1px 1px #2b2b2b;
+}
+
+/* See My Work */
+
+.mywork {
+    position: absolute;
+    top: 70%;
+    right: 3%;
+    padding: 1%;
+    border-radius: 3px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    background-image: linear-gradient(to right,  #00DCFF 0%, #FF01FB 100%);
+}
+
+.mywork i {
+    font-size: 1em;
+}
+
+.mywork a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.mywork:hover {
+    background-position: right center;
+}
+.mywork:hover a {
+    transition: all .8s;
+    color: #F7F7F7
+}
+
+
+@media (min-width: 1140px) {
+    .blueyellow {
+        width: 40%;
+    }
+    .mywork {
+        top: 70%;
+        right: 3%;
+    }
+  }
+
+@media (max-width: 1140px) and (min-width: 700px) {
+    .opener-paragraph {
+        top: 40%;
+    }
+    .name {
+        transform: rotate(0deg);
+    }
+}
+  
+  @media (max-width: 699px) {
+      .blueyellow {
+          display: none;
+      }
+
+      h2.name {
+        margin: 45% 0 0 10%;
+        transform: rotate(0deg);
+        position: initial;
+      }
+      .opener-paragraph {
+        margin-top: 35%;
+        font-family: 'Poiret One';
+        position: initial;
+        display: inline;
+      }
+
+      .engcre {
+        letter-spacing: .5em;
+        position: inherit;
+        margin: 10%;
+      }
+
+      .mywork {
+        top: 75%;
+        padding: 5%;
+        position: fixed;
+      }
+
+      svg {
+        margin: 8rem 0;
+      }
+  }

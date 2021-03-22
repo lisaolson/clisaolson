@@ -1,0 +1,28 @@
+.icons {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.icons a {
+    font-size: 25px;
+    color: #F7F4F2;
+    padding: 1rem;
+}
+
+.icons a:hover {
+    background-image: linear-gradient(to bottom right,  #00DCFF 0%, #FF01FB 100%);
+    border-radius: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 420px) {
+    .icons a {
+        font-size: 14px;
+        color: #F7F4F2;
+        padding: 1rem;
+    }
+}
+/* 
+font-size: 3rem;
+    color: #F7F4F2;
+    padding: 2rem; */
